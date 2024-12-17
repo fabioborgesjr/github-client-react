@@ -1,0 +1,28 @@
+.card {
+
+    &>.card-body {
+        height: inherit;
+
+        &>.carousel {
+            height: 50vh;
+
+            &>.carousel-inner {
+                height: 50vh;
+
+                &>.carousel-item {
+                    height: 100%;
+
+                    &>.carousel-caption {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        text-align: left;
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

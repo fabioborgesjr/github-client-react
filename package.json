@@ -1,0 +1,72 @@
+{
+  "name": "github-client-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/react": "^16.1.0",
+    "@types/jest": "^29.5.14",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "cra-template-typescript": "1.2.0",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.2",
+    "react-scripts": "5.0.1"
+  },
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@eslint/compat": "^1.2.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@types/react-dom": "^19.0.2",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-webpack-plugin": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.83.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
