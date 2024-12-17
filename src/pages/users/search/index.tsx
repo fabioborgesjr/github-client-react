@@ -9,7 +9,7 @@ import { useGithub } from "@/hooks/useGithub";
 
 const UserSearchList: React.FC = () => {
   const [searchParams] = useSearchParams();
-  const initialSearch = searchParams.get("search");
+  const initialSearch = searchParams.get("q");
   const [value, setValue] = useState(initialSearch || "");
   const {
     user,

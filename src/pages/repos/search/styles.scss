@@ -1,11 +1,11 @@
-.repos-list {
-  min-width: 100%;
+.search-card {
+  min-width: 50vw;
   background-color: rgba(142, 162, 64, 0.5);
   border: none;
   padding: 0;
   height: calc(90vh);
   margin-top: 2rem;
-  color: #fff;
+  margin-bottom: -2rem;
 
   & > .card-header {
     display: flex;
@@ -23,10 +23,20 @@
   }
 }
 
+#repo-search-button {
+  background-color: #8ea240;
+  margin-left: 1rem;
+  border-color: rgba(142, 162, 64, 0.5);
+}
+
 #repo-data {
   width: 100vw;
   flex-direction: column;
   display: flex;
+
+  & > * {
+    color: #fff;
+  }
 
   & > .list-group > .list-group-item {
     background-color: rgb(142, 162, 64, 0.5);

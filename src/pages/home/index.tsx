@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSearch = useCallback((category: string, search: string) => {
-    navigate(`/${category}?search=${encodeURIComponent(search)}`);
+    navigate(`/${category}?q=${encodeURIComponent(search)}`);
   }, []);
 
   const handleSelect = useCallback((selectedIndex: number) => {

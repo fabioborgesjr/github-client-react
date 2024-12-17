@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import CardHeaderAndFooter from "@/components/card";
 import gitPocketLogo from "@/assets/gitpocket-logo.png";
 import { Col, Container, ListGroup, Row } from "react-bootstrap";
@@ -11,12 +11,7 @@ import { sortByStars } from "@/utils/sortUtils";
 const ReposList: React.FC = () => {
   const [searchParams] = useSearchParams();
   const username = searchParams.get("username") || "";
-  const {
-    repositories,
-    loading: reposLoading,
-    error: reposError,
-  } = useRepositories(username);
-  const navigate = useNavigate();
+  const { repositories, loading: reposLoading } = useRepositories(username);
 
   return (
     <CardHeaderAndFooter

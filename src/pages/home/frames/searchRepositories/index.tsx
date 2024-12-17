@@ -19,7 +19,7 @@ const SearchRepositories = ({ onSearch }: IProps) => {
     const formattedSearch = value?.trim() || "";
 
     if (formattedSearch.length) {
-      onSearch("repos", formattedSearch);
+      onSearch("repos/search", formattedSearch);
     }
   }, [value]);
 
