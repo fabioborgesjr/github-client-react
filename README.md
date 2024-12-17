@@ -1,5 +1,12 @@
 # Desafio Front-End da Desbravador Software
 
+**Como executar a aplicação:**  
+
+* Ter o Node instalado e Yarn são pre-requisitos
+* Na pasta raiz do projeto execute `yarn` para instalar as dependencias
+* Para executar a aplicação rode o comando `yarn start`
+
+
 **Proposta:**  
 Implementar uma aplicação client-side, que consulte a API do GitHub e mostre os repositórios mais populares de um determinado usuário. Esta aplicação deve funcionar nos navegadores mais recentes do mercado.
 
