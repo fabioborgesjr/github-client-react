@@ -8,14 +8,11 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "baseUrl": "src",
+    "baseUrl": "./",
     "paths": {
-      "*": ["node_modules/*"], // Default node resolution
-      "components/*": ["components/*"], // Alias for components folder
-      "pages/*": ["components/*"], // Alias for components folder
-      "@assets/*": ["assets/*"]
+      "@/*": ["src/*"]
     },
-    "moduleResolution": "node" // Resolves modules like Node.js
+    "moduleResolution": "node" //
   },
   "include": ["src"],
   "exclude": ["node_modules"]

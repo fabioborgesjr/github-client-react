@@ -10,6 +10,7 @@ interface IProps {
   placeholder?: string;
   value: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  style?: any;
 }
 
 function Input({
@@ -20,10 +21,11 @@ function Input({
   helperText,
   placeholder,
   value,
+  style,
   onChange,
 }: IProps) {
   return (
-    <>
+    <div style={style}>
       {label && <Form.Label htmlFor={id}>Password</Form.Label>}
       <Form.Control
         placeholder={placeholder}
@@ -36,7 +38,7 @@ function Input({
       <Form.Text id={helperId} muted>
         {helperText}
       </Form.Text>
-    </>
+    </div>
   );
 }
 

@@ -1,15 +1,27 @@
 import React, { ChangeEvent, useCallback, useState } from "react";
 import { Button, Carousel } from "react-bootstrap";
-import BuscaBackground from "assets/busca-repo-background.png";
+import BuscaBackground from "@/assets/busca-repo-background.png";
+import Input from "@/components/input";
 import "./styles.scss";
-import Input from "components/input";
 
-const SearchUser = () => {
+interface IProps {
+  onSearch: (category: string, search: string) => void;
+}
+
+const SearchUser = ({ onSearch }: IProps) => {
   const [value, setValue] = useState<string>("");
 
   const handleChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   }, []);
+
+  const handleSearch = useCallback(() => {
+    const formattedSearch = value?.trim() || "";
+
+    if (formattedSearch.length) {
+      onSearch("users", formattedSearch);
+    }
+  }, [value]);
 
   return (
     <>
@@ -22,7 +34,9 @@ const SearchUser = () => {
           id="user-home-search"
           placeholder="Digite o nome do usuário..."
         />
-        <Button id="user-home-search-button">Buscar agora!</Button>
+        <Button id="user-home-search-button" onClick={handleSearch}>
+          Buscar agora!
+        </Button>
       </Carousel.Caption>
     </>
   );

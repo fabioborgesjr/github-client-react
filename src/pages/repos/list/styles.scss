@@ -1,0 +1,46 @@
+.repos-list {
+  min-width: 100%;
+  background-color: rgba(142, 162, 64, 0.5);
+  border: none;
+  padding: 0;
+  height: calc(90vh);
+  margin-top: 2rem;
+  color: #fff;
+
+  & > .card-header {
+    display: flex;
+    align-items: center;
+
+    & > div > #users-search {
+      width: 20rem;
+    }
+  }
+
+  & > .card-body {
+    height: 70vh;
+    overflow: auto;
+    margin: 1rem;
+  }
+}
+
+#see-user-repos {
+  margin-top: 2rem;
+  background-color: rgb(142, 162, 64, 0.5);
+  border-color: rgba(142, 162, 64, 0.5);
+}
+
+#repo-data {
+  width: 100vw;
+  flex-direction: column;
+  display: flex;
+
+  & > .list-group > .list-group-item {
+    background-color: rgb(142, 162, 64, 0.5);
+    border: none;
+    color: #fff;
+  }
+}
+
+.repo-item {
+  margin-bottom: 1rem;
+}

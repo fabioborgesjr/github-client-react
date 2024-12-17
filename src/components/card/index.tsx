@@ -1,16 +1,25 @@
 import { Card, Container } from "react-bootstrap";
 
-function CardHeaderAndFooter({ header, footer, children, style }: any) {
+interface IProps {
+  header?: React.ReactNode;
+  footer?: React.ReactNode;
+  children?: React.ReactNode;
+  style?: React.CSSProperties;
+  className?: string;
+}
+
+function CardHeaderAndFooter({
+  header,
+  footer,
+  children,
+  style,
+  className,
+}: IProps) {
   return (
     <Container style={style}>
-      <Card
-        className="text-center"
-        style={{ backgroundColor: "inherit", width: "100%" }}
-      >
+      <Card className={className}>
         {header && <Card.Header>{header}</Card.Header>}
-        <Card.Body style={{ width: "100%", color: "#fff" }}>
-          {children || <></>}
-        </Card.Body>
+        <Card.Body>{children || <></>}</Card.Body>
         {footer && <Card.Footer className="text-muted">{footer}</Card.Footer>}
       </Card>
     </Container>

@@ -1,28 +1,43 @@
-.card {
+.home-card {
+  width: 50vw;
+  background-color: rgba(142, 162, 64, 0.5);
+  border: none;
+  min-height: calc(50vh + 16px);
 
-    &>.card-body {
-        height: inherit;
+  & > .card-body {
+    height: inherit;
+    width: inherit;
 
-        &>.carousel {
-            height: 50vh;
+    & > .carousel {
+      height: 50vh;
+      min-width: calc(50vw - 4rem);
 
-            &>.carousel-inner {
-                height: 50vh;
+      & > .carousel-indicators > button {
+        background-color: #000;
+      }
 
-                &>.carousel-item {
-                    height: 100%;
+      & > a > span {
+        opacity: 1;
+      }
 
-                    &>.carousel-caption {
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: start;
-                        justify-content: center;
-                        text-align: left;
-                        max-width: 300px;
-                    }
-                }
-            }
+      & > .carousel-inner {
+        height: 50vh;
+        width: inherit;
+
+        & > .carousel-item {
+          height: 100%;
+
+          & > .carousel-caption {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            text-align: left;
+            max-width: 300px;
+          }
         }
+      }
     }
+  }
 }

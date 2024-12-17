@@ -1,0 +1,40 @@
+.search-card {
+  min-width: 50vw;
+  background-color: rgba(142, 162, 64, 0.5);
+  border: none;
+  padding: 0;
+  height: calc(90vh);
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+
+  & > .card-header {
+    display: flex;
+    align-items: center;
+
+    & > div > #users-search {
+      width: 20rem;
+    }
+  }
+
+  & > .card-body {
+    height: 70vh;
+  }
+}
+
+#user-search-button {
+  background-color: #8ea240;
+  margin-left: 1rem;
+  border-color: rgba(142, 162, 64, 0.5);
+}
+
+#user-data > .list-group > .list-group-item {
+  background-color: rgb(142, 162, 64, 0.5);
+  border: none;
+  color: #fff;
+}
+
+#see-user-repos {
+  margin-top: 2rem;
+  background-color: rgb(142, 162, 64, 0.5);
+  border-color: rgba(142, 162, 64, 0.5);
+}
